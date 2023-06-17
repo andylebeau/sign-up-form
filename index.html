@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Sign Up</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <h2>Sign Up</h2>
-    <form action="" method="GET">
-      <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" name="first-name" required><br><br>
-  
-      <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="last-name" required><br><br>
-  
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
-  
-      <label for="telephone">Telephone:</label>
-      <input type="tel" id="telephone" name="telephone"><br><br>
-  
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required><br><br>
-  
-      <label for="confirm-password">Confirm Password:</label>
-      <input type="password" id="confirm-password" name="confirm-password" required><br><br>
-  
-      <input type="submit" value="Create Account">
-    </form>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sign Up</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <h2>Sign Up</h2>
+  <form action="" method="GET">
+    <div>
+      <label for="first-name"></label>
+      <input type="text" id="first-name" name="first-name" placeholder="FIRST NAME" required>
+      <label for="last-name"></label>
+      <input type="text" id="last-name" name="last-name" placeholder="LAST NAME">
+    </div>
+    <div>
+      <label for="email"></label>
+      <input type="email" id="email" name="email" placeholder="E-MAIL" required>
+      <label for="telephone"></label>
+      <input type="tel" id="telephone" name="telephone" placeholder="PHONE #">
+    </div>
+    <div>
+      <label for="password"></label>
+      <input type="password" id="password" name="password" placeholder="PASSWORD" required>
+      <label for="confirm-password"></label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="CONFIRM PASSWORD" required>
+    </div>
+    <input type="submit" value="Create Account">
+  </form>
+</body>
+
 </html>
