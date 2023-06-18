@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sign Up</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="script.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Sign Up</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <script defer src="script.js"></script>
-</head>
-
-<body>
-  <h2>Sign Up</h2>
-  <form action="" method="GET">
-    <div class="full-name">
-      <label for="first-name"></label>
-      <input type="text" id="first-name"
-             name="first-name"
-             placeholder="FIRST NAME"
-             required>
-      <label for="last-name"></label>
-      <input type="text"
-             id="last-name"
-             name="last-name"
-             placeholder="LAST NAME">
-    </div>
-    <div class="contact-info">
-      <label for="email"></label>
-      <input type="email"
-             id="email"
-             name="email"
-             placeholder="E-MAIL"
-             required>
-      <label for="telephone"></label>
-      <input type="tel"
-             id="telephone"
-             name="telephone"
-             placeholder="PHONE #">
-    </div>
-    <div class="passcode">
-      <label for="password"></label>
-      <input type="password"
-             id="password"
-             name="password"
-             placeholder="PASSWORD"
-             required>
-      <label for="confirm-password"></label>
-      <input type="password"
-             id="confirm-password"
-             name="confirm-password"
-             placeholder="CONFIRM PASSWORD"
-             required>
-    </div>
-    <div class="commit">
-      <input type="submit" value="Create Account">
-    </div>
-  </form>
-</body>
+  <body>
+    <form action="" method="GET">
+      <div class="container">
+        <div class="form-row">
+          <h2 class="title">Sign Up</h2>
+        </div>
+        <div class="form-row">
+          <label for="first-name"></label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="FIRST NAME"
+            required
+          />
+          <label for="last-name"></label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="LAST NAME"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-MAIL"
+            required
+          />
+          <label for="telephone"></label>
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            placeholder="PHONE #"
+          />
+        </div>
+        <div class="form-row">
+          <label for="password"></label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="PASSWORD"
+            required
+          />
+          <label for="confirm-password"></label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="CONFIRM PASSWORD"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <div class="submit">
+            <button type="submit" value="Create Account">CREATE ACCOUNT</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
