@@ -1,20 +1,23 @@
-.container{
-  width: 500px;
+.my-form {
+  max-width: 37rem;
+  height: auto;
 }
 
-.form-row {
-  width: 500px;
+input,
+button{
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  width: 15rem;
+}
+
+.form-boxes{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  margin: 20px;
-  justify-content: center;
-}
-
-.form-row > input {
-  flex: 1;
-  padding: 10px;
 }
 
 button {
-  height: 30px;
+  height: 35px;
+  margin-top: 20px;
+
 }

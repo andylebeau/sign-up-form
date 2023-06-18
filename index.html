@@ -10,19 +10,20 @@
 
   <body>
     <form action="" method="GET">
-      <div class="container">
-        <div class="form-row">
-          <h2 class="title">Sign Up</h2>
-        </div>
-        <div class="form-row">
-          <label for="first-name"></label>
-          <input
-            type="text"
-            id="first-name"
-            name="first-name"
-            placeholder="FIRST NAME"
-            required
-          />
+      <div class="my-form">
+        <h2 class="title">Sign Up</h2>
+        <div class="form-boxes">
+          <div>
+            <label for="first-name"></label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="FIRST NAME"
+              required
+            />
+          </div>
+
           <label for="last-name"></label>
           <input
             type="text"
@@ -31,8 +32,7 @@
             placeholder="LAST NAME"
             required
           />
-        </div>
-        <div class="form-row">
+
           <label for="email"></label>
           <input
             type="email"
@@ -41,6 +41,7 @@
             placeholder="E-MAIL"
             required
           />
+
           <label for="telephone"></label>
           <input
             type="tel"
@@ -48,8 +49,7 @@
             name="telephone"
             placeholder="PHONE #"
           />
-        </div>
-        <div class="form-row">
+
           <label for="password"></label>
           <input
             type="password"
@@ -58,6 +58,7 @@
             placeholder="PASSWORD"
             required
           />
+
           <label for="confirm-password"></label>
           <input
             type="password"
@@ -67,10 +68,8 @@
             required
           />
         </div>
-        <div class="form-row">
-          <div class="submit">
-            <button type="submit" value="Create Account">CREATE ACCOUNT</button>
-          </div>
+        <div class="submit">
+          <button type="submit" value="Create Account">CREATE ACCOUNT</button>
         </div>
       </div>
     </form>
