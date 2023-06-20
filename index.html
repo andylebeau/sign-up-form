@@ -4,74 +4,105 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Sign Up</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <script defer src="script.js"></script>
   </head>
 
   <body>
-    <form action="" method="GET">
-      <div class="my-form">
-        <h2 class="title">Sign Up</h2>
-        <div class="form-boxes">
-          <div>
-            <label for="first-name"></label>
-            <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              placeholder="FIRST NAME"
-              required
-            />
+    <div class="container">
+      <div class="left-logo">
+        <figure class="salmon">
+          <img src="images/salmon.jpg" alt="salmon" />
+          <div class="logo-text">
+            <div>COOK</div>
+            <div class="small-logo-text">...LESS</div>
           </div>
+          <div class="image-credit">
+            <div class="right-credit">
+              Photo by
+              <a
+                href="https://unsplash.com/@redzzz97?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Mattia Occhi</a
+              >
 
-          <label for="last-name"></label>
-          <input
-            type="text"
-            id="last-name"
-            name="last-name"
-            placeholder="LAST NAME"
-            required
-          />
-
-          <label for="email"></label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="E-MAIL"
-            required
-          />
-
-          <label for="telephone"></label>
-          <input
-            type="tel"
-            id="telephone"
-            name="telephone"
-            placeholder="PHONE #"
-          />
-
-          <label for="password"></label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="PASSWORD"
-            required
-          />
-
-          <label for="confirm-password"></label>
-          <input
-            type="password"
-            id="confirm-password"
-            name="confirm-password"
-            placeholder="CONFIRM PASSWORD"
-            required
-          />
-        </div>
-        <div class="submit">
-          <button type="submit" value="Create Account">CREATE ACCOUNT</button>
-        </div>
+              on
+              <a
+                href="https://unsplash.com/photos/OwR3d_kvzJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </div>
+          </div>
+        </figure>
       </div>
-    </form>
+
+      <div class="right-form">
+        <form action="" method="GET">
+          <div class="my-form">
+            <h2 class="title">Sign Up</h2>
+            <div class="form-boxes">
+              <div>
+                <label for="first-name"></label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="FIRST NAME"
+                  required
+                />
+              </div>
+
+              <label for="last-name"></label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="LAST NAME"
+                required
+              />
+
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-MAIL"
+                required
+              />
+
+              <label for="telephone"></label>
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="PHONE #"
+              />
+
+              <label for="password"></label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="PASSWORD"
+                required
+              />
+
+              <label for="confirm-password"></label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="CONFIRM PASSWORD"
+                required
+              />
+            </div>
+            <div class="submit">
+              <button type="submit" value="Create Account">
+                CREATE ACCOUNT
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

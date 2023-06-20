@@ -1,0 +1,77 @@
+@import url(./normalize.css);
+
+html {
+  background-color: rgba(6,12,6,255)
+}
+
+.container {
+  width: 300px;
+  display: flex;
+  gap: 30px;
+}
+
+.salmon img {
+  width: 300px;
+}
+
+.salmon {
+  position: relative;
+}
+
+.logo-text{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: white;
+  font-size: 100px;
+  text-align: right;
+  line-height: 85px;
+}
+
+.small-logo-text{
+  font-size: 93px
+}
+
+.image-credit{
+  position: relative;
+  font-size: small;
+  text-align: right;
+  color: grey;
+}
+
+.right-credit > a{
+  color: white;
+}
+
+.right-credit > a:visited{
+  color: grey;
+}
+
+.my-form {
+  max-width: 600px;
+  height: auto;
+}
+
+input{
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  width: 210px
+}
+
+.form-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  width: 220px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+
+.title {
+  color: white;
+}
