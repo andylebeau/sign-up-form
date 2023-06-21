@@ -42,14 +42,20 @@ img {
   font-size: 93px
 }
 
-.credit{
+.credit,
+.login-text{
   font-family: sans-serif;
   text-align: right;
   font-size: small;
   color: grey;
 }
 
-.credit > a{
+.login-text{
+  text-align: center;
+}
+
+.credit > a,
+.login-text > a{
   color: white;
 }
 
@@ -80,13 +86,14 @@ input{
 button{
   all: unset;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 20px;
-  border: 2px white solid;
+  margin-bottom: 11px;
+  border: 1px rgba(210,67,0,255) solid;
   border-radius: 5px;
   padding: 10px;
+  transition: 0.3s;
 }
 
 button:hover{
@@ -105,7 +112,7 @@ button:hover{
     justify-content: center;
     align-items: normal;
     margin-top: 10%;
-    border: 5px rgba(210,67,0,255) solid;
+    border: 3px rgba(210,67,0,255) solid;
     border-radius: 5px;
     padding: 30px;
   }
