@@ -1,4 +1,5 @@
 
+
 html {
   background-color: rgba(6,12,6,255)
 }
@@ -8,23 +9,29 @@ body{
 }
 
 .container{
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header{
-  position: relative;
+.logo,
+.signup-form{
+  width: 300px;
 }
 
 img {
   width: 300px;
 }
 
+.logo{
+  position: relative;
+}
+
 .logo-text{
   position: absolute;
   top: 8px;
-  color: white;
+  color: white;;
   font-size: 100px;
-  text-align: right;
   line-height: 90px;
 }
 
@@ -48,19 +55,43 @@ img {
 }
 
 input{
+  border: unset;
   padding: 0.2rem 1rem;
   font-size: 1.2rem;
-  width: 15rem;
+  border-radius: 10px;
 }
 
-/* .form-box{
+.form-title {
+  margin: 20px;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+/* .sign-up-form {
+  margin: calc((300px - 18rem)/2)
+} */
+
+.form-box{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* .form-row{
+  display: flex;
   gap: 10px;
 } */
 
-.title {
-  font-size: 35px;
-  color: white;
-  text-align: center;
+@media screen and (min-width: 740px) {
+  .container{
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    align-items: normal;
+    margin-top: 10%;
+  }
+  .logo-text{
+    text-align: right;
+  }
 }
