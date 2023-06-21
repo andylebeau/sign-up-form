@@ -42,24 +42,18 @@ img {
   font-size: 93px
 }
 
-.credit,
-.login-text{
+.tiny-text{
   font-family: sans-serif;
-  text-align: right;
   font-size: small;
   color: grey;
-}
-
-.login-text{
   text-align: center;
 }
 
-.credit > a,
-.login-text > a{
+.tiny-text > a{
   color: white;
 }
 
-.credit > a:visited{
+.tiny-text > a:visited{
   color: grey;
 }
 
@@ -114,7 +108,8 @@ button:hover{
     margin-top: 10%;
     border: 3px rgba(210,67,0,255) solid;
     border-radius: 5px;
-    padding: 30px;
+    padding: 40px;
+    padding-top: 20px;
   }
   .logo-text{
     text-align: right;
