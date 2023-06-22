@@ -64,6 +64,14 @@ input{
   border-radius: 10px;
 }
 
+/* input:valid {
+  background-color: #ddffdd;
+}
+
+input:invalid {
+  background-color: #FF9999;
+} */
+
 .form-title {
   margin: 20px;
   font-size: 50px;
