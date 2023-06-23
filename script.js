@@ -1,12 +1,23 @@
+function checkPassword(str) {
+  var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+  return re.test(str);
+}
 
-function checkPassword(form) {
-    password1 = form.password1.value;
-    password2 = form.password2.value;
-    console.log(password1, password2);
-  
-    if (password1 != password2) {
-        alert ("Password did not match: Please try again...");
-    } else {
-        alert ("Welcome! We will send you an email to verify your new account");
-    };
+function checkForm(form) {
+  if (form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+    if (!checkPassword(form.pwd1.value)) {
+      form.pwd1.focus();
+      return false;
+    }
+  } else {
+    form.pwd1.focus();
+    return false;
+  }
+  return true;
+}
+
+if (!RegExp.escape) {
+  RegExp.escape = function (s) {
+    return String(s).replace(/[\\^$*+?.()|[\]{}]/g, "\\$&");
+  }
 }

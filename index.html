@@ -97,28 +97,32 @@
 
             <div class="form-row">
               <div class="form-box">
-                <label for="password1"></label>
+                <label for="pwd1"></label>
                 <input
                   type="password"
-                  id="password1"
-                  name="password1"
+                  id="pwd1"
+                  name="pwd1"
                   placeholder="PASSWORD"
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  title="Must contain at least, one number, uppercase letter, lowercase letter, and be least 8 characters"
                   required
+                  onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                  if(this.checkValidity()) {
+                    form.pwd2.pattern = RegExp.escape(this.value);
+                  }"
                 />
               </div>
 
               <div class="form-box">
-                <label for="password2"></label>
+                <label for="pwd2"></label>
                 <input
                   type="password"
-                  id="password2"
-                  name="password2"
+                  id="pwd2"
+                  name="pwd2"
                   placeholder="CONFIRM PASSWORD"
-                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                   title="Passwords don't match"
                   required
+                  onchange="this.setCustomValidity(this.validity.patternMismatch ? this.title : '');"
                 />
               </div>
             </div>
